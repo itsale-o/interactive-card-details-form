@@ -87,8 +87,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Live site with Github Pages](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-card-details-form-solution-dmwCgzCts1)
+- Live Site URL: [Live site with Github Pages](https://itsale-o.github.io/interactive-card-details-form/)
 
 ## My process
 
