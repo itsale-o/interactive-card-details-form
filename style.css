@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    font-size: 1.125rem;
+}
+
+#form-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(278, 68%, 11%);
+}
+
+.input-div > p{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(278, 68%, 11%);
+}
+
+.input-div{
+    margin-bottom: 1.5rem;
+}
+
+.linear-gradient-border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linear-gradient-border > input{
+    color: hsl(278, 68%, 11%);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    padding-left: .5rem;
+    width: 100%;
+}
+
+.linear-gradient-border > input::placeholder{
+    color: hsl(279, 6%, 55%);
+}
+
+.linear-gradient-border{
+    width: fit-content;
+    border: solid 1px hsl(270, 3%, 87%);
+    border-radius: 6px;  
+}
+
+.linear-gradient-border:focus-within{
+    border-radius: 6px;
+    border: solid 1px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.linear-gradient-border > input:focus{
+    outline: none;
+}
+
+.exp-date-cvc{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+
+.row-col-inputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.small-input{
+    width: 70px;
+}
+
+.date-input{
+    margin-right: .6rem;
+}
+
+.big-input{
+    width: 300px;
+}
+
+.medium-input{
+    width: 141px;
+}
+
+#card-illustration-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#front{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    background-image: url(images/bg-card-front.png);
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    height: 189px;
+}
+
+#front > img{
+    width: 50px;
+    margin-bottom: 2rem;
+}
+
+#card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#card-number{
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+#name-exp-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+#back{
+    background-image: url(images/bg-card-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    border-radius: 5px;
+    width: 300px;
+    height: 189px;
+}
+
+#cvc{
+    position: relative;
+    top: 5.4rem;
+    left: 16rem;
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+.btn{
+    cursor: pointer;
+    height: 40px;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 300px;
+}
+
+.btn:hover{
+    background-color: hsl(278, 68%, 19%);
+}
+
+#success-div{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#success-div > img{
+    width: 50px;
+    margin-bottom: 2rem;
+}
+
+#ty-message{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+#ty{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+}
+
+#info-message{
+    font-size: .9rem;
+    color: hsl(279, 6%, 55%);
+}
+
+.span-error{
+    display: none;
+    color: hsl(0, 100%, 66%);
+    font-size: .8rem;
+    margin-top: .2rem;
+}
+
+.border-error{
+    border: solid 1px;
+    color: hsl(0, 100%, 66%);
+}
+
+#span-error-date-cvc{
+    display: flex;
+    flex-direction: row;
+    margin: -3rem 0 3rem 0;
+}
+
+#cvc-input-error{
+    position: absolute;
+}
+
+@media(min-width: 700px){
+    #main-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;  
+        min-height: 100vh;
+    }
+
+    .bigger-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;  
+    }
+
+    #expdate-input-error{
+        width: 161px;
+    }
+
+    #cvc-input-error{
+        left: 42.3rem;
+    }
+
+    #card-illustration-div{
+        width: 30%;
+        background-image: url(images/bg-main-desktop.png);
+        background-size: 112%;
+        justify-content: center;
+    }
+
+    #front{
+        position: relative;
+        left: 5rem;
+    }
+    
+    #back{
+        position: relative;
+        left: 9rem;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+    }
+}
+
+@media(max-width:700px){
+    #main-container{
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #form-div{
+        padding: 1rem;
+        width: 100vw;
+    }
+
+    .big-input{
+        width: 100%;
+    }
+
+    .medium-input{
+        width: 100%;
+    }
+
+    .exp-date-div{
+        width: 35vw;
+    }
+
+    .cvc-div{
+        width: 65vw;   
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    #expdate-input-error{
+        width: 165px;
+    }
+
+    #cvc-input-error{
+        left: 10.7rem;
+    }
+
+    #card-illustration-div{
+        width: 100vw;
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-bottom: 4rem;
+    }
+
+    #front{
+        z-index: 1;
+        position: relative;
+        top: 11rem;
+        right: 3rem;
+    }
+
+    #back{
+        z-index: 0;
+        position: relative;
+        bottom: 9.5rem;
+        left: 3rem;
+    }
+
+    #success-div{
+        padding: 1rem;
+        width: 100vw;
+        margin-top: -4rem;
+    }
+
+    footer{
+        margin: 5px 0 5px 0;
+    }
+}
+
+footer{
+    font-size: 11px;
+    text-align: center;
+    color: hsl(279, 6%, 55%);
+}
+
+footer a{
+    color: hsl(278, 68%, 11%);
+}
